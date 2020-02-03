@@ -1,7 +1,7 @@
-## CodeBrick_Front
+## CodeBrick_Front_Assignment
 
-[] use Vue.js
+### Task Summary
 
-[] create single page web application with ajax
-
-[] use vue-router (http://router.vuejs.org)
+1. use Vue.js
+2. create single page web application with ajax
+3. use vue-router (http://router.vuejs.org)
