@@ -36,7 +36,16 @@
       "plugin:vue/essential",
       "@vue/standard"
     ],
-    "rules": {},
+    "rules": {
+      "quotes": [
+        "off",
+        "single"
+      ],
+      "semi": [
+        2,
+        "always"
+      ]
+    },
     "parserOptions": {
       "parser": "babel-eslint"
     }
