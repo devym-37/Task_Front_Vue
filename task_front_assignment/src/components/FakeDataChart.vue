@@ -1,32 +1,39 @@
 <template>
   <div>
-    <v-card class="mx-0 pa-5" v-for="fakeData in fakeDatas" :key="fakeData.No">
+    <v-card
+      class="mx-0 pa-4"
+      v-for="fakeData in fakeDatas"
+      :key="fakeData.No"
+      selectable
+      selected-color="red"
+    >
       <v-layout row wrap>
-        <v-flex xs3 md1>
+        <v-checkbox v-model="checkbox1"></v-checkbox>
+        <v-flex class="mt-5">
           <div>{{ fakeData.No }}</div>
         </v-flex>
-        <v-flex xs3 md2>
+        <v-flex xs3 md2 class="mt-5">
           <div>{{ fakeData.Vin }}</div>
         </v-flex>
-        <v-flex xs3 md2>
+        <v-flex xs3 md2 class="mt-5">
           <div>{{ fakeData.Model }}</div>
         </v-flex>
-        <v-flex xs3 md1>
+        <v-flex xs3 md1 class="mt-5">
           <div>{{ fakeData.Make }}</div>
         </v-flex>
-        <v-flex xs3 md2>
+        <v-flex xs3 md2 class="mt-5">
           <div>{{ fakeData.Year }}</div>
         </v-flex>
-        <v-flex xs3 md1>
+        <v-flex xs3 md1 class="mt-5">
           <div>{{ fakeData.MSRP }}</div>
         </v-flex>
-        <v-flex xs3 md1>
+        <v-flex xs3 md1 class="mt-5">
           <div>{{ fakeData.Status }}</div>
         </v-flex>
-        <v-flex xs3 md1>
+        <v-flex xs3 md1 class="mt-5">
           <div>{{ fakeData.Booked }}</div>
         </v-flex>
-        <v-flex xs3 md1>
+        <v-flex xs3 md1 class="mt-5">
           <div>{{ fakeData.Listed }}</div>
         </v-flex>
       </v-layout>
