@@ -1,29 +1,51 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import Vue from "vue";
+import VueRouter from "vue-router";
+import SignOut from "../views/SignOut.vue";
+import Inventory from "../views/Inventory.vue";
+import ManageMarket from "../views/ManageMarket.vue";
+import ManageCustomer from "../views/ManageCustomer.vue";
+import ReportSetting from "../views/ReportSetting.vue";
+import Commission from "../views/Commission.vue";
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '/',
-    name: 'home',
-    component: Home
+    path: "/",
+    name: "signout",
+    component: SignOut
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    path: "/inventory",
+    name: "inventory",
+    component: Inventory
+  },
+  {
+    path: "/managemarket",
+    name: "managemarket",
+    component: ManageMarket
+  },
+  {
+    path: "/managecustomer",
+    name: "managecustomer",
+    component: ManageCustomer
+  },
+  {
+    path: "/reportsetting",
+    name: "reportsetting",
+    component: ReportSetting
+  },
+  {
+    path: "/commission",
+    name: "commission",
+    component: Commission
   }
-]
+];
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: "history",
   base: process.env.BASE_URL,
   routes
-})
+});
 
-export default router
+export default router;
