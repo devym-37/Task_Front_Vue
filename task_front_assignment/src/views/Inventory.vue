@@ -2,7 +2,7 @@
   <div class="inventory">
     <v-toolbar flat app>
       <v-toolbar-title class="text-uppercase">
-        <div class="subheading grey--text mt-8">Inventory List</div>
+        <h2 class="subheading grey--text mt-12">Inventory List</h2>
         <span>Filter : </span>
         <span class="font-weight-light"
           >Filter by Model, Make, YEAR, etc..</span
@@ -12,7 +12,7 @@
         </v-btn>
       </v-toolbar-title>
     </v-toolbar>
-    <v-container class="my-5">
+    <v-container class="my-5 mt-12">
       <v-card class="pa-5">
         <v-layout row wrap>
           <v-flex xs3 md1>
@@ -46,7 +46,13 @@
       </v-card>
       <fakeDataChart />
     </v-container>
-    <Popup />
+    <v-btn class="mx-2" fab dark small color="grey">
+      <v-icon dark>mdi-plus</v-icon>
+    </v-btn>
+    <v-btn class="mx-2" fab dark small color="grey">
+      <v-icon dark>mdi-minus</v-icon>
+    </v-btn>
+    <Popup class="mx-2" />
   </div>
 </template>
 
