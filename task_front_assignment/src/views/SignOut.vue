@@ -1,6 +1,6 @@
 <template>
   <div class="singout">
-    <h1>Sign Out</h1>
+    <h1 class="subheading grey--text my-4">Sign Out</h1>
   </div>
 </template>
 
