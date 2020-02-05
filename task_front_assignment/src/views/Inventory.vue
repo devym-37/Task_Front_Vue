@@ -44,47 +44,18 @@
           </v-flex>
         </v-layout>
       </v-card>
-      <!-- <v-card class="pa-5" v-for="fakeData in fakeDatas" :key="fakeData.No">
-        <v-layout row wrap>
-          <v-flex xs3 md1>
-            <div>{{ fakeData.No }}</div>
-          </v-flex>
-          <v-flex xs3 md2>
-            <div>{{ fakeData.Vin }}</div>
-          </v-flex>
-          <v-flex xs3 md2>
-            <div>{{ fakeData.Model }}</div>
-          </v-flex>
-          <v-flex xs3 md1>
-            <div>{{ fakeData.Make }}</div>
-          </v-flex>
-          <v-flex xs3 md2>
-            <div>{{ fakeData.Year }}</div>
-          </v-flex>
-          <v-flex xs3 md1>
-            <div>{{ fakeData.MSRP }}</div>
-          </v-flex>
-          <v-flex xs3 md1>
-            <div>{{ fakeData.Status }}</div>
-          </v-flex>
-          <v-flex xs3 md1>
-            <div>{{ fakeData.Booked }}</div>
-          </v-flex>
-          <v-flex xs3 md1>
-            <div>{{ fakeData.Listed }}</div>
-          </v-flex>
-        </v-layout>
-      </v-card> -->
       <fakeDataChart />
     </v-container>
+    <Popup />
   </div>
 </template>
 
 <script>
 import fakeDataChart from "@/components/FakeDataChart";
+import Popup from "@/components/Popup";
 
 export default {
-  components: { fakeDataChart },
+  components: { fakeDataChart, Popup },
   data: () => {
     return {
       fakeDatas: [
