@@ -12,7 +12,12 @@
         </v-btn>
       </v-toolbar-title>
     </v-toolbar>
-    <v-container class="my-5 mt-12">
+
+    <v-container
+      class="my-5 mt-12 overflow-y-auto"
+      id="scroll-target"
+      style="max-height: 300px; min-width:500px"
+    >
       <v-card class="pa-5">
         <v-layout row wrap>
           <v-flex xs3 md1>
@@ -46,6 +51,7 @@
       </v-card>
       <fakeDataChart />
     </v-container>
+
     <v-btn class="mx-2" fab dark small color="grey">
       <v-icon dark>mdi-plus</v-icon>
     </v-btn>
