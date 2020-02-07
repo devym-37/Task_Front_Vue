@@ -20,3 +20,6 @@
 
 1. Button function
 2. Horizontal Scroll
+
+### Result View
+![vue front](https://user-images.githubusercontent.com/25405849/74031765-b1619900-49f5-11ea-839b-3852ebf9b703.PNG)
